@@ -13,4 +13,3 @@ namespace WebApi.Framework.DataAccess.Entities
         public virtual T Id { get; set; }
     }
 }
-=

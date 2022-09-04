@@ -15,7 +15,6 @@ namespace WebApi.Framework.DataAccess.Repositories.EntityFramework
             _context = context;
             Connection = context.Database.GetDbConnection();
         }
-
         public virtual T? Get(int Id)
         {
             return _context.Set<T>().FirstOrDefault(x => x.Id == Id);
